@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:text="@string/number1" />
+
+    <EditText
+        android:id="@+id/editNum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:minHeight="48dp"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck"
+
+        android:importantForAutofill="no"
+        tools:targetApi="o"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:text="@string/number2" />
+
+    <EditText
+        android:id="@+id/editNum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:minHeight="48dp"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck"
+
+        android:importantForAutofill="no"
+        tools:targetApi="o"  />
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickAdd"
+
+        android:text="@string/add"
+        tools:ignore="UsingOnClickInXml"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickSub"
+        android:text="@string/sub"
+        tools:ignore="UsingOnClickInXml"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickMul"
+        android:text="@string/mul"
+        tools:ignore="UsingOnClickInXml"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickDiv"
+        android:text="@string/div"
+        tools:ignore="UsingOnClickInXml"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:text="@string/result" />
+
+</LinearLayout>
