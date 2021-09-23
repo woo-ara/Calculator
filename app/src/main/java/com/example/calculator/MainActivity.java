@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         EditText number1 = (EditText) findViewById(R. id.editNum1);
         EditText number2 = (EditText) findViewById(R. id.editNum2);
         TextView result = (TextView) findViewById(R. id.result);
+        //정수형 계산
         int n1 = Integer.parseInt(number1.getText().toString());
         int n2 = Integer.parseInt(number2.getText().toString());
         result.setText(Integer.toString(n1 + n2));
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         EditText number1 = (EditText) findViewById(R. id.editNum1);
         EditText number2 = (EditText) findViewById(R. id.editNum2);
         TextView result = (TextView) findViewById(R. id.result);
+        //정수형 계산
         int n1 = Integer.parseInt(number1.getText().toString());
         int n2 = Integer.parseInt(number2.getText().toString());
         result.setText(Integer.toString(n1 - n2));
@@ -41,9 +43,9 @@ public class MainActivity extends AppCompatActivity {
         EditText number1 = (EditText) findViewById(R. id.editNum1);
         EditText number2 = (EditText) findViewById(R. id.editNum2);
         TextView result = (TextView) findViewById(R. id.result);
+        //정수형 계산
         int n1 = Integer.parseInt(number1.getText().toString());
         int n2 = Integer.parseInt(number2.getText().toString());
-
         result.setText(Integer.toString(n1 * n2));
     }
 
@@ -52,8 +54,10 @@ public class MainActivity extends AppCompatActivity {
         EditText number1 = (EditText) findViewById(R. id.editNum1);
         EditText number2 = (EditText) findViewById(R. id.editNum2);
         TextView result = (TextView) findViewById(R. id.result);
-        int n1 = Integer.parseInt(number1.getText().toString());
-        int n2 = Integer.parseInt(number2.getText().toString());
-        result.setText(Integer.toString(n1 / n2));
+        //정수형 계산
+        double n1 = Double.parseDouble(number1.getText().toString());
+        double n2 = Double.parseDouble(number2.getText().toString());
+
+        result.setText(Double.toString(Math.round(n1/n2))); //반올림
     }
 }

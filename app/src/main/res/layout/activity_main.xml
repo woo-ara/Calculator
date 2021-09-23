@@ -12,6 +12,7 @@
         android:layout_height="match_parent"
         android:layout_margin="20dp">
 
+        //Number1 입력
         <TableRow>
             <TextView
                 android:id="@+id/textView1"
@@ -33,6 +34,7 @@
                 tools:targetApi="o"/>
         </TableRow>
 
+        //Number2 입력
        <TableRow>
             <TextView
                 android:id="@+id/textView2"
@@ -54,6 +56,7 @@
                 tools:targetApi="o"  />
         </TableRow>
 
+        // 사칙연산 버튼
         <LinearLayout
             android:layout_margin="20dp"
             android:orientation="vertical">
@@ -108,6 +111,7 @@
 
         </LinearLayout>
 
+        //결과 출력
         <TableRow>
             <TextView
                 android:id="@+id/resultText"
