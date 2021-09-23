@@ -25,10 +25,14 @@ public class MainActivity extends AppCompatActivity {
         EditText number2 = (EditText) findViewById(R. id.editNum2);
         TextView result = (TextView) findViewById(R. id.result);
 
-        int n1 = Integer.parseInt(number1.getText().toString());
-        int n2 = Integer.parseInt(number2.getText().toString());
+//        int n1 = Integer.parseInt(number1.getText().toString());
+//        int n2 = Integer.parseInt(number2.getText().toString());
+//
+//        result.setText(Integer.toString(n1 + n2));
+        double n1 = Double.parseDouble(number1.getText().toString());
+        double n2 = Double.parseDouble(number2.getText().toString());
 
-        result.setText(Integer.toString(n1 + n2));
+        result.setText(Double.toString(n1 + n2));
     }
 
     public void onClickSub(View view) {
@@ -36,10 +40,14 @@ public class MainActivity extends AppCompatActivity {
         EditText number2 = (EditText) findViewById(R. id.editNum2);
         TextView result = (TextView) findViewById(R. id.result);
 
-        int n1 = Integer.parseInt(number1.getText().toString());
-        int n2 = Integer.parseInt(number2.getText().toString());
+//        int n1 = Integer.parseInt(number1.getText().toString());
+//        int n2 = Integer.parseInt(number2.getText().toString());
+//
+//        result.setText(Integer.toString(n1 - n2));
+        double n1 = Double.parseDouble(number1.getText().toString());
+        double n2 = Double.parseDouble(number2.getText().toString());
 
-        result.setText(Integer.toString(n1 - n2));
+        result.setText(Double.toString(n1 - n2));
     }
 
     public void onClickMul(View view) {
@@ -47,10 +55,14 @@ public class MainActivity extends AppCompatActivity {
         EditText number2 = (EditText) findViewById(R. id.editNum2);
         TextView result = (TextView) findViewById(R. id.result);
 
-        int n1 = Integer.parseInt(number1.getText().toString());
-        int n2 = Integer.parseInt(number2.getText().toString());
+//        int n1 = Integer.parseInt(number1.getText().toString());
+//        int n2 = Integer.parseInt(number2.getText().toString());
+//
+//        result.setText(Integer.toString(n1 * n2));
+        double n1 = Double.parseDouble(number1.getText().toString());
+        double n2 = Double.parseDouble(number2.getText().toString());
 
-        result.setText(Integer.toString(n1 * n2));
+        result.setText(Double.toString(n1 * n2));
     }
 
     public void onClickDiv(View view) {
@@ -58,10 +70,14 @@ public class MainActivity extends AppCompatActivity {
         EditText number2 = (EditText) findViewById(R. id.editNum2);
         TextView result = (TextView) findViewById(R. id.result);
 
-        int n1 = Integer.parseInt(number1.getText().toString());
-        int n2 = Integer.parseInt(number2.getText().toString());
+//        int n1 = Integer.parseInt(number1.getText().toString());
+//        int n2 = Integer.parseInt(number2.getText().toString());
+//
+//        result.setText(Integer.toString(n1 / n2));
+        double n1 = Double.parseDouble(number1.getText().toString());
+        double n2 = Double.parseDouble(number2.getText().toString());
 
-        result.setText(Integer.toString(n1 / n2));
+        result.setText(Double.toString(n1 / n2));
     }
 
 }

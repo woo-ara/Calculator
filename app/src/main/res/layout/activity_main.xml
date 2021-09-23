@@ -79,9 +79,15 @@
         tools:ignore="UsingOnClickInXml"/>
 
     <TextView
-        android:id="@+id/result"
+        android:id="@+id/resultText"
         android:layout_width="98dp"
         android:layout_height="wrap_content"
         android:text="@string/result" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"/>
+
 
 </LinearLayout>
